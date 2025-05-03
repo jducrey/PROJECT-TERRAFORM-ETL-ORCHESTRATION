@@ -38,34 +38,39 @@ Avant de commencer, assurez-vous d'avoir les outils suivants installés sur votr
 
 1. Clonez ce dépôt :
 
-   '''bash
+   ```bash
    git clone https://github.com/ton_utilisateur/mon_projet_etl.git
    cd mon_projet_etl
+   ```
 
 2. Installez les dépendances Python :
 
 Vous pouvez installer les dépendances à l'aide de requirements.txt :
-  '''bash
+  ```bash
   pip install -r requirements.txt
+  ```
 
 3. Déployez avec Terraform :
 
 Exécutez les commandes Terraform pour télécharger et traiter les données.
-  '''bash
+  ```bash
   terraform init
   terraform apply
+  ```
   
 4. Lancez l'application Streamlit :
 
 Une fois que les données ont été traitées et sauvegardées, lancez l'application Streamlit :
-  '''bash
+  ```bash
   streamlit run app.py
+  ```
 
 Dockerisation (optionnel)
 Si vous préférez dockeriser le projet, utilisez le Dockerfile pour créer une image et exécuter le projet dans un conteneur.
-  '''bash
+  ```bash
   docker build -t mon_projet_etl .
   docker run -p 8501:8501 mon_projet_etl
+  ```
 
 L'application sera accessible sur http://localhost:8501.
 
