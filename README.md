@@ -39,8 +39,8 @@ Avant de commencer, assurez-vous d'avoir les outils suivants installés sur votr
 1. Clonez ce dépôt :
 
    ```bash
-   git clone https://github.com/ton_utilisateur/mon_projet_etl.git
-   cd mon_projet_etl
+   git clone https://github.com/user/etl_project.git
+   cd etl_project
    ```
 
 2. Installez les dépendances Python :
@@ -68,8 +68,8 @@ Une fois que les données ont été traitées et sauvegardées, lancez l'applica
 Dockerisation (optionnel)
 Si vous préférez dockeriser le projet, utilisez le Dockerfile pour créer une image et exécuter le projet dans un conteneur.
   ```bash
-  docker build -t mon_projet_etl .
-  docker run -p 8501:8501 mon_projet_etl
+  docker build -t etl_project/ETL_Streamlit_App .
+  docker run -p 8501:8501 etl_project/ETL_Streamlit_App
   ```
 
 L'application sera accessible sur http://localhost:8501.
